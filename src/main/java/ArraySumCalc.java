@@ -3,10 +3,10 @@ import java.util.concurrent.RecursiveTask;
 
 public class ArraySumCalc extends RecursiveTask<Integer> {
 
-    int start;
-    int end;
-    int[] arr;
-    int threshold;
+    private int start;
+    private int end;
+    private int[] arr;
+    private int threshold;
 
     public ArraySumCalc(int start, int end, int[] arr, int threshold) {
         this.start = start;
@@ -31,8 +31,5 @@ public class ArraySumCalc extends RecursiveTask<Integer> {
         }
         return summ;
     }
-
-//    private int forkTaskAndGetResult() {
-//
-//    }
+    
 }

@@ -21,7 +21,7 @@ public class Main {
         System.out.println();
 
         long startTime2 = System.currentTimeMillis();
-        ArraySumCalc asc = new ArraySumCalc(0, arr.length, arr, 100_000_000);
+        ArraySumCalc asc = new ArraySumCalc(0, arr.length, arr, 50_000_000);
         int res = fjp.invoke(asc);
         long finishTime2 = System.currentTimeMillis();
         System.out.printf("Размер: %d%nВремя выполнения (ForkJoinPool), мс: %d%n", arrSize, finishTime2 - startTime2);
